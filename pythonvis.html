@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+
+<!-- jQuery library -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+<!-- Popper JS -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+
+<!-- Latest compiled JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    <link rel="stylesheet" href="pythonvis.css">
+    <title>RPA ML Labs - Python Visualizer</title>
+</head>
+<body >
+    <div class="container-fluid" style="background-image: url(desktop.jpg); height: 150vh; width: 100%; background-size: cover; background-position: center; max-width: 100%; ">
+        <p class="banner">See how your code executes. Real-time and step by step.</p>
+        <div class="container-fluid d-flex">
+            <div class="container jumbotron" style="display: inline-flexbox;">
+                <p class="banner" style="font-size: 2em;">Consider this example of a Bubble Sort Algorithm.</p>
+                <p class="banner2">A Bubble sort is one of the very basic sorting algorithms that sorts the elements in an array by comparing and swapping the maximum with the minimum value, with n number of iterations where n is the number of elements in the array. Technically, it's one of the algorithms with the worst time & space complexities</p>
+                <div class="row">
+                    <div class="col-lg-6"><img src="bsort.gif"></div>
+                    <div class="col-lg-6" style="display: flex; align-items: center;"><p class="banner3">Go ahead and try it out.&nbsp;&nbsp;<i class="fa fa-arrow-right"></i></p></div>
+                </div>
+            </div>
+            <iframe class="container" width="400" height="525" frameborder="0" src="https://pythontutor.com/iframe-embed.html#code=def%20bubbleSort%28arr%29%3A%0A%20%20%20%20for%20x%20in%20range%28len%28arr%29%29%3A%0A%20%20%20%20%20%20%20%20for%20y%20in%20range%28len%28arr%29-1%29%3A%0A%20%20%20%20%20%20%20%20%20%20%20%20if%20arr%5By%5D%20%3E%20arr%5By%2B1%5D%3A%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20temp%20%3D%20arr%5By%5D%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20arr%5By%5D%20%3D%20arr%5By%2B1%5D%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20arr%5By%2B1%5D%20%3D%20temp%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20print%28arr%29%0A%20%20%20%20return%20arr%0A%0Aprint%28bubbleSort%28%5B1,5,2,4,3%5D%29%29&codeDivHeight=400&codeDivWidth=350&cumulative=false&curInstr=68&heapPrimitives=nevernest&origin=opt-frontend.js&py=3&rawInputLstJSON=%5B%5D&textReferences=false"> </iframe>
+        </div>
+        <p class="banner animate__animated animate__backInLeft" style="color: black;">Excited to try your own code and play around? Click here &nbsp;<a href="https://pythontutor.com/" style="color: black; font-size: 1em;"><i class="fa fa-chevron-right animate__animated animate__slow animate__shakeX animate__repeat-1"></i></a></p>
+    </div>
+</body>
+</html>

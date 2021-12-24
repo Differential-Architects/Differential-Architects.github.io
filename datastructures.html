@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+
+<!-- jQuery library -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+<!-- Popper JS -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+
+<!-- Latest compiled JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="navbarstyles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="datastructures.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    <title>RPA ML Labs - DS</title>
+</head>
+<body>
+
+
+    <div class="container-fluid" style="background-image: url(minimdesktop.jpg); height: 200vh; width: 100%; background-size: cover; background-position: center; max-width: 100%; ">
+        <p class="banner animate__animated animate__backInLeft animate__delay-1s">
+            Simplifying one of the most complex ideas. <br>
+            Data structures & Algorithms. Leveraging visual appeal.
+        </p>
+        <!-- <p class="banner2 animate__animated animate__backInLeft animate__delay-2s">
+            Well no more wondering because we got you covered. Choose from one of the below to get started.
+        </p><br> -->
+        <div class="container">
+            <button class="collapsible banner2 d-flex justify-content-center">What is a Data Structure?</button>
+            <div class="content">
+                <p class="banner3">We have variables to store single values of a specific data type. What do we do when have several such variables? That's exactly the purpose of Data Structures. A structure to hold data. Play around below with data structures to understand the workings under the hood.</p>
+            </div> <br><br>
+        </div>
+
+
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-4">
+                    <div class="card" style="width: 18rem;">
+                        <img class="card-img-top" src="linkedlist.gif" alt="Card image cap">
+                        <div class="card-body">
+                            <h5 class="card-title">Linked List</h5>
+                            <p class="card-text">See and play around with how a Linked List works.</p>
+                            <a href="https://visualgo.net/en/list" class="btn btn-primary">Try it out!</a>
+                        </div>                
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="card" style="width: 18rem;">
+                        <img class="card-img-top" src="hashtable.gif" alt="Card image cap">
+                        <div class="card-body">
+                            <h5 class="card-title">Hash Table</h5>
+                            <p class="card-text">See and play around with how a Hash Table works.</p>
+                            <a href="https://visualgo.net/en/hashtable" class="btn btn-primary">Try it out!</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="card" style="width: 18rem;">
+                        <img class="card-img-top" src="bst.gif" alt="Card image cap">
+                        <div class="card-body">
+                            <h5 class="card-title">Binary Search Tree</h5>
+                            <p class="card-text">See and play around with how a Binary Search Tree works.</p>
+                            <a href="https://visualgo.net/en/bst" class="btn btn-primary">Try it out!</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div> <br><br>
+
+
+
+        <div class="container">
+            <button class="collapsible banner2 d-flex justify-content-center">What is an Algorithm?</button>
+            <div class="content">
+                <p class="banner3">An algorithm is a set of instructions for solving a problem or accomplishing a task. One common example of an algorithm is a recipe, which consists of specific instructions for preparing a dish or meal. Every computerized device uses algorithms to perform its functions in the form of hardware- or software-based routines.</p>
+            </div> <br><br>
+        </div>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-4">
+                    <div class="card" style="width: 18rem;">
+                        <img class="card-img-top" src="sorting.gif" alt="Card image cap">
+                        <div class="card-body">
+                            <h5 class="card-title">Sorting</h5>
+                            <p class="card-text">See and understand all types of sorting.</p>
+                            <a href="https://visualgo.net/en/sorting" class="btn btn-primary">Try it out!</a>
+                        </div>                
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="card" style="width: 18rem;">
+                        <img class="card-img-top" src="search.gif" alt="Card image cap">
+                        <div class="card-body">
+                            <h5 class="card-title">Searching</h5>
+                            <p class="card-text">See how searching works by breadth & depth.</p>
+                            <a href="https://visualgo.net/en/dfsbfs" class="btn btn-primary">Try it out!</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="card" style="width: 18rem;">
+                        <img class="card-img-top" src="sp.gif" alt="Card image cap">
+                        <div class="card-body">
+                            <h5 class="card-title">Shortest Path</h5>
+                            <p class="card-text">See how shortest path algorithm works.</p>
+                            <a href="https://visualgo.net/en/sssp" class="btn btn-primary">Try it out!</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div> <br><br>
+            </div>
+        </div>
+    </div>
+    <script>
+        var coll = document.getElementsByClassName("collapsible");
+        var i;
+        
+        for (i = 0; i < coll.length; i++) {
+          coll[i].addEventListener("click", function() {
+            this.classList.toggle("active");
+            var content = this.nextElementSibling;
+            if (content.style.maxHeight){
+              content.style.maxHeight = null;
+            } else {
+              content.style.maxHeight = content.scrollHeight + "px";
+            } 
+          });
+        }
+        </script>
+    
+</body>
+</html>

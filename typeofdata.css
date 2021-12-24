@@ -1,0 +1,86 @@
+@import url('https://rsms.me/inter/inter.css');
+html { font-family: 'Inter', sans-serif; }
+@supports (font-variation-settings: normal) {
+  html { font-family: 'Inter var', sans-serif; }
+}
+
+.banner
+{
+    padding: 5% 3% 0% 5%;
+    font-family: 'Inter var', sans-serif;
+    font-weight: 740;
+    letter-spacing: -0.080em;
+    font-size: 4em;
+    text-indent: -0.03em;
+}
+
+.banner2
+{
+    padding : 0% 3% 3% 5%;
+    font-family: 'Inter var', sans-serif;
+    font-weight: 540;
+    letter-spacing: -0.080em;
+    font-size: 3em;
+    text-indent: -0.03em;
+}
+
+.caret
+{
+    font-family: 'Inter var', sans-serif;
+    font-weight: 740;
+    letter-spacing: -0.080em;
+    font-size: 1.5em;
+    text-indent: -0.03em;
+}
+
+.nested
+{
+    font-family: 'Inter var', sans-serif;
+    font-size: 1.3em;
+    font-weight: 640;
+    letter-spacing: -0.080em;
+    text-indent: -0.03em;   
+}
+
+
+.jumbotron
+{
+    background-color: rgba(228, 233, 237, 0.5);
+}
+
+ul, #myUL {
+    list-style-type: none;
+  }
+  
+  #myUL {
+    margin: 0;
+    padding: 0;
+  }
+  
+  .caret {
+    cursor: pointer;
+    -webkit-user-select: none; /* Safari 3.1+ */
+    -moz-user-select: none; /* Firefox 2+ */
+    -ms-user-select: none; /* IE 10+ */
+    user-select: none;
+  }
+  
+  .caret::before {
+    content: "\25B6";
+    color: black;
+    display: inline-block;
+    margin-right: 6px;
+  }
+  
+  .caret-down::before {
+
+    transform: rotate(90deg);  
+  }
+  
+  .nested {
+    display: none;
+  }
+  
+  .active {
+    display: block;
+  }

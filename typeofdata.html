@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+
+<!-- jQuery library -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+<!-- Popper JS -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+
+<!-- Latest compiled JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="navbarstyles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="typeofdata.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    <title>RPA ML Labs - Type of data</title>
+</head>
+<body style="background-image: url(bothands.jpg); background-repeat:  no-repeat; background-size: cover; ">
+
+<div class="container-fluid">
+    <p class="banner"> You can build your model based on the types of data available in front of you. </p> <br>
+    <p class="banner2"> Explore the possible segmentations available by choosing a type of data from our list below.</p>
+    <div class="container">
+        <div class="jumbotron">
+            <ul id="myUL">
+                <li><span class="caret">Image - Choose this to explore all the possibilities you have available with image type data</span>
+                  <ul class="nested">
+                    <li><a href="Imageclassification.html">Classification</a></li>
+                    <li><a href="Imagecorrection.html">Correction</a></li>
+                    <li>Conversion to Text (Extraction)</li>
+                    <li>Feature Manipulation</li>                    
+                    <li>Processing</li>                    
+                    <li>Recognition</li>
+                  </ul>
+                </li>
+            </ul>      
+            <ul id="myUL">
+                <li><span class="caret">Text</span>
+                    <ul class="nested">
+                        <li>Classification</li>
+                        <li>Conversional AI Chatbot</li>
+                        <li>Conversion to Text</li>
+                        <li>Keyword Extraction</li>
+                        <li>Summarization</li>
+                    </ul>
+                </li>
+            </ul>
+            <ul id="myUL">
+                <li><span class="caret">Audio</span>
+                    <ul class="nested">
+                        <li>Black Tea</li>
+                        <li>White Tea</li>
+                    </ul>
+                </li>
+            </ul>
+            <ul id="myUL">
+                <li><span class="caret">Video</span>
+                    <ul class="nested">
+                        <li>Black Tea</li>
+                        <li>White Tea</li>
+                    </ul>
+                </li>
+            </ul>
+    </div>
+    </div>
+</div>
+
+<script>
+    var toggler = document.getElementsByClassName("caret");
+    var i;
+    
+    for (i = 0; i < toggler.length; i++) {
+      toggler[i].addEventListener("click", function() {
+        this.parentElement.querySelector(".nested").classList.toggle("active");
+        this.classList.toggle("caret-down");
+      });
+    }
+</script>
+
+</body>
+</html>

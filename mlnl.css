@@ -1,0 +1,48 @@
+@import url('https://rsms.me/inter/inter.css');
+html { font-family: 'Inter', sans-serif; }
+@supports (font-variation-settings: normal) {
+  html { font-family: 'Inter var', sans-serif; }
+}
+
+.banner
+{
+    padding: 3% 3% 0% 5%;
+    font-family: 'Inter var', sans-serif;
+    font-weight: 740;
+    letter-spacing: -0.080em;
+    font-size: 4em;
+    text-indent: -0.03em;
+}
+
+.banner2
+{
+    padding : 0% 3% 3% 5%;
+    font-family: 'Inter var', sans-serif;
+    font-weight: 540;
+    letter-spacing: -0.080em;
+    font-size: 3em;
+    text-indent: -0.03em;
+}
+
+.card-title
+{
+    font-family: 'Inter var', sans-serif;
+    font-weight: 740;
+    letter-spacing: -0.080em;
+    font-size: 1.2 em;
+    text-indent: -0.03em;
+}
+
+.card-text
+{
+    font-family: 'Inter var', sans-serif;
+    font-weight: 640;
+    letter-spacing: -0.080em;
+    text-indent: -0.03em;   
+}
+
+
+.jumbotron
+{
+    background-color: rgba(228, 233, 237, 0.5);
+}
